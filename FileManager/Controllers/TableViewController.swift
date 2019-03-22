@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    let array = ["Get Info", "Clear Log", "Create File", "Create Dir", "Delete", "Get Documents Path"]
+    let array = ["Get Info (Deprecated)", "Clear", "Create File", "Create Dir", "Delete", "Get Documents Path"]
     
     var fileManager = FileManagement()
     let mainVC = ViewController()
@@ -18,7 +18,6 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.isScrollEnabled = false
     }
 
     override func viewWillLayoutSubviews() {
@@ -78,7 +77,7 @@ extension TableViewController {
     // MARK: - Add Alert Controller For Delete Item
     
     private func alert() {
-        let alert = UIAlertController(title: "Warning", message: "Are you sure you want to delete the item?", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Warning!", message: "Are you sure you want to delete item? If you not input any item name, that delete all data in document directory!", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: {_ in NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FileManagerCommand"), object: nil)})
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
         alert.addAction(cancelAction)

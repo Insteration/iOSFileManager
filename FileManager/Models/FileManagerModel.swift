@@ -43,7 +43,7 @@ class FileManagement: Helper {
             getStringFormArrayStrings += $0 + "\n"
         }
         
-        return "\n=============" + "\nDate:" + getCurrentTime() + "\n=============" + "\nContents:" + "\n=============" + "\n\(getStringFormArrayStrings)" + "\n============="
+        return "\n=============" + "\nDate: " + getCurrentTime() + "\n=============" + "\nContents:" + "\n=============" + "\n\(getStringFormArrayStrings)" + "\n============="
     }
     
     // MARK:- Create Direcotry
