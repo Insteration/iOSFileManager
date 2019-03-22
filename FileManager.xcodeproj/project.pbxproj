@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D92D36CB2244DA4600B08FB5 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D36CA2244DA4600B08FB5 /* TableViewController.swift */; };
+		D92D36CF2244E2E500B08FB5 /* FileManagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D36CE2244E2E500B08FB5 /* FileManagerModel.swift */; };
+		D92D36D12244E30500B08FB5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92D36D02244E30500B08FB5 /* Helper.swift */; };
 		D9D40DF022442776003032B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40DEF22442776003032B6 /* AppDelegate.swift */; };
 		D9D40DF222442776003032B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40DF122442776003032B6 /* ViewController.swift */; };
 		D9D40DF522442776003032B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9D40DF322442776003032B6 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D92D36CA2244DA4600B08FB5 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		D92D36CE2244E2E500B08FB5 /* FileManagerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerModel.swift; sourceTree = "<group>"; };
+		D92D36D02244E30500B08FB5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		D9D40DEC22442776003032B6 /* FileManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FileManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D40DEF22442776003032B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9D40DF122442776003032B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +41,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D92D36D22244F2FA00B08FB5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D92D36D02244E30500B08FB5 /* Helper.swift */,
+				D92D36CE2244E2E500B08FB5 /* FileManagerModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D92D36D32244F30400B08FB5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D9D40DF122442776003032B6 /* ViewController.swift */,
+				D92D36CA2244DA4600B08FB5 /* TableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D92D36D42244F31B00B08FB5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9D40DF322442776003032B6 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D92D36D52244F32800B08FB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D9D40DF622442778003032B6 /* Assets.xcassets */,
+				D9D40DF822442778003032B6 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		D9D40DE322442776003032B6 = {
 			isa = PBXGroup;
 			children = (
@@ -55,11 +96,11 @@
 			isa = PBXGroup;
 			children = (
 				D9D40DEF22442776003032B6 /* AppDelegate.swift */,
-				D9D40DF122442776003032B6 /* ViewController.swift */,
-				D9D40DF322442776003032B6 /* Main.storyboard */,
-				D9D40DF622442778003032B6 /* Assets.xcassets */,
-				D9D40DF822442778003032B6 /* LaunchScreen.storyboard */,
+				D92D36D32244F30400B08FB5 /* Controllers */,
 				D9D40DFB22442778003032B6 /* Info.plist */,
+				D92D36D22244F2FA00B08FB5 /* Models */,
+				D92D36D52244F32800B08FB5 /* Resources */,
+				D92D36D42244F31B00B08FB5 /* Views */,
 			);
 			path = FileManager;
 			sourceTree = "<group>";
@@ -136,7 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D40DF222442776003032B6 /* ViewController.swift in Sources */,
+				D92D36CF2244E2E500B08FB5 /* FileManagerModel.swift in Sources */,
+				D92D36CB2244DA4600B08FB5 /* TableViewController.swift in Sources */,
 				D9D40DF022442776003032B6 /* AppDelegate.swift in Sources */,
+				D92D36D12244E30500B08FB5 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
