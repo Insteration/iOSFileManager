@@ -46,25 +46,14 @@ class TableViewController: UITableViewController {
     // MARK: - Check on select
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
 
-        switch indexPath.row {
-        case 0:
-            FileManagement.commandValue = 0
-        case 1:
-            FileManagement.commandValue = 1
-        case 2:
-            FileManagement.commandValue = 2
-        case 3:
-            FileManagement.commandValue = 3
-        case 4:
-            FileManagement.commandValue = 4
+        FileManagement.commandValue = indexPath.row
+        if indexPath.row == 4 {
             alert()
-        case 5:
-            FileManagement.commandValue = 5
-        default:
-            ()
-        }
+        } else {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FileManagerCommand"), object: nil)
+        }
     }
 }
 
