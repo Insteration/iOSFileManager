@@ -50,25 +50,21 @@ class TableViewController: UITableViewController {
         switch indexPath.row {
         case 0:
             FileManagement.commandValue = 0
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FileManagerCommand"), object: nil)
         case 1:
             FileManagement.commandValue = 1
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FileManagerCommand"), object: nil)
         case 2:
             FileManagement.commandValue = 2
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FileManagerCommand"), object: nil)
         case 3:
             FileManagement.commandValue = 3
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FileManagerCommand"), object: nil)
         case 4:
             FileManagement.commandValue = 4
             alert()
         case 5:
             FileManagement.commandValue = 5
-            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FileManagerCommand"), object: nil)
         default:
             ()
         }
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "FileManagerCommand"), object: nil)
     }
 }
 
