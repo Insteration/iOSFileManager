@@ -18,7 +18,6 @@ class ViewController: UIViewController {
     
     let fileManager = FileManagement()
     var timer = Timer()
-    var isTimerRunning = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
